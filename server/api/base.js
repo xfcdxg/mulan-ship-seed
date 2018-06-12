@@ -1,8 +1,8 @@
-import syncReply from 'lib/sync-reply'
+import reply from 'lib/reply'
 
 export default (
   router =>
   router.get('/heartbeat', (req, res) => {
-    syncReply(res, () => ({ a: 1 }))
+    reply(res, () => ({ a: 1 }))
   })
 )
