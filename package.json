@@ -1,0 +1,31 @@
+{
+  "name": "mulan-ship-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && pm2 startOrRestart ecosystem.config.js",
+    "stop": "pm2 stop ecosystem.config.js",
+    "log": "pm2 log mulan-ship-seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xfcdxg/mulan-ship-seed.git"
+  },
+  "author": "zhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xfcdxg/mulan-ship-seed/issues"
+  },
+  "homepage": "https://github.com/xfcdxg/mulan-ship-seed#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mulan-lib": "^1.0.26",
+    "pm2": "^2.10.4",
+    "ramda": "^0.25.0"
+  }
+}
