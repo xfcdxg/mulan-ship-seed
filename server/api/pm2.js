@@ -1,5 +1,5 @@
 import reply  from 'lib/reply'
-import { pm2List, pm2Describe } from '../pm2'
+import { pm2List, pm2Describe, pm2DescribeFull, pm2Log } from '../pm2'
 import { log } from 'mulan-lib'
 
 export default (
@@ -17,5 +17,13 @@ export default (
   .get('/describe/:process', (req, res) => {
     const { process } = req.params
     reply(res, cb => pm2Describe(process, cb), true)
+  })
+  .get('/describe/full/:process', (req, res) => {
+    const { process } = req.params
+    reply(res, cb => pm2DescribeFull(process, cb), true)
+  })
+  .get('/log/:process', (req, res) => {
+    const { process } = req.params
+    reply(res, cb => pm2Log(process, cb), true)
   })
 )

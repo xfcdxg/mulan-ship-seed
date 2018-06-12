@@ -1,3 +1,4 @@
+import 'babel-register'
 import express       from 'express'
 import bodyParser    from 'body-parser'
 import { log }       from 'mulan-lib'
