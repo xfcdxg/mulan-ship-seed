@@ -7,7 +7,7 @@ module.exports = {
       script          : "./server",
       interpreter     : './node_modules/.bin/babel-node',
       log_date_format : 'MM-DD HH:mm:ss',
-      merge_logs      : true
+      merge_logs      : true,
       env: {
         COMMON_VARIABLE: "true"
       },

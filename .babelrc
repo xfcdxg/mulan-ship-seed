@@ -5,7 +5,8 @@
       {
         "root": ["./"],
         "alias": {
-          "lib": "./lib"
+          "lib": "./lib",
+          "config": "./config"
         }
       }
     ],

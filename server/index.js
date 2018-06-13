@@ -1,9 +1,8 @@
-import 'babel-register'
-import express       from 'express'
-import bodyParser    from 'body-parser'
-import { log }       from 'mulan-lib'
-import defineApi     from './api'
-import { port }      from '../config'
+import express    from 'express'
+import bodyParser from 'body-parser'
+import { log }    from 'mulan-lib'
+import { port }   from 'config'
+import defineApi  from './api'
 
 const server =
 defineApi(express)
