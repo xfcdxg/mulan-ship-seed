@@ -8,6 +8,7 @@ module.exports = {
       interpreter     : './node_modules/.bin/babel-node',
       log_date_format : 'MM-DD HH:mm:ss',
       merge_logs      : true,
+      ignore_watch    : ['.project'],
       env: {
         COMMON_VARIABLE: "true"
       },

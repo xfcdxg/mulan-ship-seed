@@ -5,8 +5,10 @@ import { port }   from 'config'
 import defineApi  from './api'
 
 const server =
-defineApi(express)
-.use(bodyParser.json())
-.use(bodyParser.urlencoded({ extended: true }))
+defineApi(
+  express()
+  .use(bodyParser.json())
+  .use(bodyParser.urlencoded({ extended: true }))
+)
 
 server.listen(port, () => log('server run at ' + port))
