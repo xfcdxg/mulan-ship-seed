@@ -1,7 +1,9 @@
 export default ({
   // base error 10000 - 12000
+  'SIGN_ERROR':     ['签名错误', 10000],
   'FILE_EXISTS':    ['文件已存在', 10001],
   'FILE_NOT_FOUND': ['文件不存在', 10002],
+
 
   // pm2 error 12001 - 13000
   'PM2_LIST_ERR':       ['获取PM2 List失败', 12001],
