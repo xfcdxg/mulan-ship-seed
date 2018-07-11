@@ -8,3 +8,5 @@ export const npmScriptStart = 'npm run start'
 export const npmScriptStop = 'npm run stop'
 
 export const defaultGitBranch = 'master'
+
+export const repoIsEmpty = 'repo_is_empty'
